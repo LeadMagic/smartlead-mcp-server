@@ -190,14 +190,20 @@ export function registerCampaignTools(
     async (params) => {
       try {
         const validatedParams = SaveCampaignSequenceRequestSchema.parse(params);
-        if (validatedParams.sequence && validatedParams.sequence.length > 0) {
-          const result = await client.saveCampaignSequence(
-            validatedParams.campaign_id,
-            validatedParams.sequence[0]!
-          );
-          return formatSuccessResponse('Campaign sequence saved successfully', result);
+        if (!validatedParams.sequence || validatedParams.sequence.length === 0) {
+          return handleError(new Error('Sequence data is required and cannot be empty'));
         }
-        return handleError(new Error('Sequence data is missing'));
+        
+        const firstSequence = validatedParams.sequence[0];
+        if (!firstSequence) {
+          return handleError(new Error('First sequence item is invalid'));
+        }
+        
+        const result = await client.saveCampaignSequence(
+          validatedParams.campaign_id,
+          firstSequence
+        );
+        return formatSuccessResponse('Campaign sequence saved successfully', result);
       } catch (error) {
         return handleError(error);
       }
