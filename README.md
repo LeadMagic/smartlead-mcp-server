@@ -18,3 +18,7 @@ For LeadMagic B2B enrichment, use [hosted MCP setup](https://leadmagic.io/docs/m
 ## Security and license
 
 Do not post API keys or customer data in public issues. Send private vulnerability reports to [security@leadmagic.io](mailto:security@leadmagic.io). See [publication guidance](PUBLICATION.md) and the [MIT license](LICENSE).
+
+## License and contributions
+
+[MIT license](LICENSE) · [Third-party materials and contribution policy](LICENSE-NOTES.md). Reuse is allowed under the license; changes to this repository require maintainer review.
