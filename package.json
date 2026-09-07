@@ -42,7 +42,7 @@
   ],
   "author": {
     "name": "LeadMagic Team",
-    "email": "jesse@leadmagic.io",
+    "email": "support@leadmagic.io",
     "url": "https://leadmagic.io"
   },
   "license": "MIT",
@@ -53,7 +53,7 @@
   },
   "bugs": {
     "url": "https://github.com/LeadMagic/smartlead-mcp-server/issues",
-    "email": "jesse@leadmagic.io"
+    "email": "support@leadmagic.io"
   },
   "main": "dist/index.js",
   "bin": {

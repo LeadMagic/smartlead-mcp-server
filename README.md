@@ -392,7 +392,7 @@ npm install -g smartlead-mcp-by-leadmagic
 
 ## 🤝 **Support & Links**
 
-- 📧 **Support**: [jesse@leadmagic.io](mailto:jesse@leadmagic.io)
+- 📧 **Support**: [person@example.com](mailto:person@example.com)
 - 🐛 **Issues**: [GitHub Issues](https://github.com/LeadMagic/smartlead-mcp-server/issues)
 - 📚 **Docs**: [Full Documentation](https://github.com/LeadMagic/smartlead-mcp-server/wiki)
 - 🌐 **SmartLead**: [smartlead.ai](https://smartlead.ai)
@@ -422,3 +422,7 @@ npx smartlead-mcp-by-leadmagic install
 **Keywords**: SmartLead, MCP, Model Context Protocol, Cold Email, Email Marketing, AI Tools, Claude, Cursor, Windsurf, Continue, VS Code, Campaign Management, Lead Generation, Email Automation, Sales Automation, TypeScript, React Ink
 
 </div>
+
+## Public examples and publication
+
+Examples are fictional unless an explicit public source is cited. See [PUBLICATION.md](PUBLICATION.md) for data, claims, attribution, and disclosure requirements.

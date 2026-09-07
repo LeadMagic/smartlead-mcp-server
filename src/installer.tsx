@@ -660,7 +660,7 @@ const CompletionScreen: React.FC<{
             • SmartLead: <Link url="https://smartlead.ai">smartlead.ai</Link>
           </Text>
           <Text>
-            • Support: <Link url="mailto:jesse@leadmagic.io">jesse@leadmagic.io</Link>
+            • Support: <Link url="mailto:person@example.com">person@example.com</Link>
           </Text>
         </Box>
       </Box>

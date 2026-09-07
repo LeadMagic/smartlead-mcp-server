@@ -1,5 +1,10 @@
 # 💜 Changelog
 
+## Public-content privacy review — 2026-09-06
+
+Use synthetic contact examples, remove unnecessary identity and credential-like samples, and clarify publication, attribution, and claims requirements.
+
+
 All notable changes to the SmartLead MCP Server will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -9,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 💜 Purple Gradient Brand Transformation
 - **Complete visual overhaul** with beautiful purple gradient theming throughout
-- **Enhanced brand alignment** with SmartLead's visual identity  
+- **Enhanced brand alignment** with SmartLead's visual identity
 - **Purple gradient installer** with stunning 'mind', 'teen', 'vice', 'cristal' color schemes
 - **Logo transformation** with purple gradient and golden accent subtitle
 - **README.md redesign** with purple badge system and SmartLead-specific branding
