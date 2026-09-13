@@ -173,6 +173,17 @@ export class CampaignManagementClient extends BaseSmartLeadClient {
   }
 
   /**
+   * Get campaign analytics (simple - no date filtering)
+   */
+  async getCampaignAnalytics(campaignId: number): Promise<any> {
+    const response = await this.withRetry(
+      () => this.apiClient.get(`/campaigns/${campaignId}/analytics`),
+      'get campaign analytics'
+    );
+    return response.data;
+  }
+
+  /**
    * Fetch campaign analytics by date range
    */
   async fetchCampaignAnalyticsByDateRange(

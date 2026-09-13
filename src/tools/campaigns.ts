@@ -362,4 +362,28 @@ export function registerCampaignTools(
       }
     }
   );
+
+  // Get Campaign Analytics Tool (Simple - no date filtering)  
+  server.registerTool(
+    'smartlead_get_campaign_analytics',
+    {
+      title: 'Get Campaign Analytics', 
+      description: 'Get comprehensive analytics data for a specific campaign including sent count, open count, reply count, bounce count, and lead statistics.',
+      inputSchema: GetCampaignRequestSchema.shape
+    },
+    async (params) => {
+      try {
+        const validatedParams = GetCampaignRequestSchema.parse(params);
+        const result = await client.campaigns.getCampaignAnalytics(validatedParams.campaign_id);
+        
+        return formatSuccessResponse(
+          'Campaign analytics retrieved successfully',
+          result,
+          `Analytics for campaign ${validatedParams.campaign_id}: ${result.sent_count} sent, ${result.reply_count} replies, ${result.open_count} opens`
+        );
+      } catch (error) {
+        return handleError(error);
+      }
+    }
+  );
 }
