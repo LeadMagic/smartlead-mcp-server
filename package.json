@@ -121,15 +121,5 @@
   },
   "peerDependencies": {
     "@modelcontextprotocol/sdk": ">=1.0.0"
-  },
-  "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "allowJs": false,
-    "outDir": "./dist",
-    "strict": true,
-    "noImplicitAny": true,
-    "resolveJsonModule": true,
-    "jsx": "react-jsx"
   }
 }
